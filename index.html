@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task one</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h4>Заполните форму для заказа суши:</h4>
+    <form>
+      <div>
+        <label>
+          <span>Имя:</span>
+          <input type="text" id="name" name="Name" required/>
+        </label>
+      </div>
+
+      <div>
+        <label>
+          <span>Город:</span>
+          <input type="text" name="City" list="city" required/>
+            <datalist id="city">
+              <option>Краматорск</option>
+              <option>Славянск</option>
+              <option>Дружковка</option>
+              <option>Константиновка</option>
+            </datalist>
+        </label>
+      </div>
+
+      <div>
+        <label>
+          <span>Адрес:</span>
+          <input type="text" id="address" name="Address" required/>
+        </label>
+      </div>
+
+      <div>
+        <label>
+          <span>Телефон:</span>
+          <input type="tel" id="phone" name="Phone" required/>
+        </label>
+      </div>
+
+      <div>
+        <label>
+          <span>Email:</span>
+          <input type="email" id="email" name="Email" pattern="gmail\.com"/>
+        </label>
+      </div>
+      <div><label><span id="stiks">Палочки:</span></label></div>
+      <div>
+        <label>
+          <span>количество - </span>
+          <input type="number" name="userRating" id="rating" value="0" min="0" max="15" step="1">
+        </label>
+      </div>
+
+      <div>
+        <label>
+          <span>вид - </span>
+          <input type="radio" name="sticks" value="Ordinary" id="stiks1">
+          <label for="stiks1">Обычные</label>
+          <input type="radio" name="sticks" value="Educational" id="stiks2">
+          <label for="stiks2">Учебные</label>
+        </label>
+      </div>
+
+      <div>
+        <label>
+          <span>Вид суши:</span>
+          <input type="text" name="genre" id="typeSushi" list="getSushi" required/>
+            <datalist id="getSushi">
+                <option>Филаделфия (лосось-угорь)</option>
+                <option>Филаделфия (тенец)</option>
+                <option>Калифорния</option>
+                <option>Калифорния (краб)</option>
+                <option>Окинава</option>
+                <option>Креветка рол</option>
+                <option>Футомаки</option>
+            </datalist>
+        </label>
+      </div>
+
+      <div>
+        <label>
+          <span>Класть салфетки?:</span>
+          <input type="radio" name="doily" value="doilyYes" id="doily1">
+          <label for="doily1">Да</label>
+          <input type="radio" name="doily" value="doilyNo" id="doily2">
+          <label for="doily2">Нет</label>
+        </label>
+      </div>
+
+      <div>
+        <label>
+          <span>Комментарий:</span>
+          <input type="text" id="comments" name="Comments" required/>
+        </label>
+      </div>
+
+      <div>
+        <button type="submit">Отправить заказ</button>
+      </div>
+    </form>
+</body>
+</html>
